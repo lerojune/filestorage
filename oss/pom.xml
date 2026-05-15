@@ -76,6 +76,52 @@
             <version>[7.7.0, 7.10.99]</version>
         </dependency>
 
+        <!-- Apache Parquet Core Libraries -->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.parquet</groupId>-->
+<!--            <artifactId>parquet-column</artifactId>-->
+<!--            <version>1.13.1</version> &lt;!&ndash; 请使用最新稳定版 &ndash;&gt;-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>org.apache.parquet</groupId>
+            <artifactId>parquet-hadoop</artifactId>
+            <version>1.13.1</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.parquet</groupId>-->
+<!--            <artifactId>parquet-avro</artifactId> &lt;!&ndash; 如果使用 Avro Schema &ndash;&gt;-->
+<!--            <version>1.13.1</version>-->
+<!--        </dependency>-->
+
+        <!-- Hadoop Client (Parquet uses Hadoop FileSystem APIs) -->
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-client</artifactId>
+            <version>3.3.6</version> <!-- 请使用与你的环境兼容的版本 -->
+        </dependency>
+
+
+<!--        <dependency> &lt;!&ndash; Spark dependency &ndash;&gt;-->
+<!--            <groupId>org.apache.spark</groupId>-->
+<!--            <artifactId>spark-sql_2.13</artifactId>-->
+<!--            <version>4.1.1</version>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>org.duckdb</groupId>
+            <artifactId>duckdb_jdbc</artifactId>
+            <version>1.5.2.1</version> <!-- 请使用最新稳定版 -->
+        </dependency>
+
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
+            <scope>runtime</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
